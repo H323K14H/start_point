@@ -6,20 +6,36 @@ public class Runner {
         shoppingTrolleyDemo();
     }
 
-    public static void rectangleDemo(){
+    //    PART 1:
+    public static void rectangleDemo() {
         System.out.println("----------");
         System.out.println("Running rectangle tasks...");
 
+
         // 1. Create a new rectangle object
-//        Rectangle rectangle = <INSTANTIATE A NEW RECTANGLE OBJECT HERE>
+        System.out.println("Q1:");
+        Rectangle rectangle = new Rectangle(7, 5);
+        System.out.println("Length: " + rectangle.getLength() + " Height: " + rectangle.getHeight());
+
+
+        // 1.5 Change Height
+        System.out.println("Q1.5:");
+        rectangle.setHeight(7);
+
+
+        System.out.println(rectangle.getHeight());
+
 
         // 2. Calculate the rectangle's area and store it in a variable
-//        int area = <CALL YOUR METHOD HERE>;
-//        System.out.println("The rectangle has an area of " + area);
+        System.out.println("Q2:");
+        int area = rectangle.getArea();//<CALL YOUR METHOD HERE>;
+        System.out.println("The rectangle has an area of " + area);
+
 
         // 3. Check if your rectangle is actually a square
-//        boolean isRectangle = <CALL YOUR METHOD HERE>
-//        System.out.println("Object is a square (true/false): " + isRectangle);
+        System.out.println("Q3:");
+        boolean isRectangle = rectangle.isRectangle();
+        System.out.println("Object is a square (true/false): " + isRectangle);
     }
 
     public static void computerDemo(){
